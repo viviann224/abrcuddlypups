@@ -1,0 +1,33 @@
+@font-face {
+		font-family: "Roboto Slab";
+		src: url("./RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+		font-family: "Roboto";
+		src: url("./Roboto-Regular.ttf");
+}
+
+
+
+h3 {
+    font-family: "Roboto Slab", serif ;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.25em;
+    color: #006064;
+    margin: .25em 0 .56em;
+     letter-spacing: 1px;
+}
+
+body{
+	font-family: "Roboto", serif ;
+	color: "#626d72";
+	margin:0.3em 0 1.5em;
+}
+
+h4{
+	font-size:1.65em;
+	font-weight:800;
+
+}
