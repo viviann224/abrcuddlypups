@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Donate from "./pages/Donate";
 
 function App() {
   return (
@@ -8,10 +9,11 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-      {/*
-          <Route exact path={["/", "/books"]}>
-            <Books />
+
+          <Route exact path={["/donate"]}>
+            <Donate />
           </Route>
+    {/*
           <Route exact path="/books/:id">
             <Detail />
           </Route>
