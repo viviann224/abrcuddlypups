@@ -7,26 +7,24 @@ class Donate extends Component {
   state={
     cuddlydata:[]
   }
-  // state = {
-  //   image: "",
-  //   match: false,
-  //   matchCount: 0
-  // };
+
 
   // When the component mounts, load the next dog to be displayed
   componentDidMount() {
+    this.loadDogs();
+
+  }
+
+  loadDogs = () => {
+
     API.getCuddly()
       .then(res =>
         this.setState({
           cuddlydata: res.data
         })
       )
-
-    // API.getCuddly().then(function(data){
-    //   this.setState({this.state.cuddlydata:data.data})
-    //   //console.log(data.data)
-    // });
-  }
+      .catch(err => console.log(err));
+  };
 
   // handleBtnClick = event => {
   //   // Get the data-value of the clicked button
@@ -52,29 +50,27 @@ class Donate extends Component {
   //   this.loadNextDog();
   // };
 
-  // loadNextDog = () => {
-  //   API.getRandomDog()
-  //     .then(res =>
-  //       this.setState({
-  //         image: res.data.message
-  //       })
-  //     )
-  //     .catch(err => console.log(err));
-  // };
+
 
   render() {
     return (
       <div className="container">
         <div className="row text-center mt-3">
-          {this.state.cuddlydata.length ? (
 
-          <Card/>
+          {this.state.cuddlydata.map(data => (
+                    <Card
+                      key={data.link}
+                      urgent={data.urgent}
+                      name={data.name}
+                      link={data.link}
+                      img={data.img}
+                      desc={data.desc}
+                      loc={data.loc}
+                      donantionsneeded={data.donantionsneeded}
+                      itemsneeded={data.itemsneeded}
 
-
-
-              ) : (
-                <h2 className="text-center">No pups</h2>
-              )}
+                    />
+                  ))}
       </div>
         {/* <h1 className="text-center">Make New Friends</h1>
         <h3 className="text-center">
