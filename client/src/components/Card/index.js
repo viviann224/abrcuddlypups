@@ -9,9 +9,10 @@ function Card(props) {
           <img className="img-responsive w-100" src={props.img} alt=""/>
           <div className="overlay">
              <h2>{props.name}</h2>
-             {props.desc} |
-             <p><FaMapMarkerAlt/> {props.loc} |
-            <FaDollarSign/> {props.donantionsneeded} | <FaGift/> {props.itemsneeded}</p>
+             <p id="card-desc">{props.desc}</p>
+             <p id="card-hover"><FaMapMarkerAlt style={{ fill: '#006064' }}/> {props.loc} |
+            <FaDollarSign style={{ fill: '#006064' }}/> {props.donationsneeded} |
+            <FaGift style={{ fill: '#006064' }}/> {props.itemsneeded}</p>
              <a className="info" href={props.link}>Donate</a>
           </div>
       </div>

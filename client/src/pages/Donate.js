@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "../components/Card";
+import  "../components/Card/Card.css";
+
 
 
 class Donate extends Component {
@@ -54,8 +56,8 @@ class Donate extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row text-center mt-3">
+      <div className="container" id="card-container">
+        <div className="row text-center">
 
           {this.state.cuddlydata.map(data => (
                     <Card
@@ -66,7 +68,7 @@ class Donate extends Component {
                       img={data.img}
                       desc={data.desc}
                       loc={data.loc}
-                      donantionsneeded={data.donantionsneeded}
+                      donationsneeded={data.donationsneeded}
                       itemsneeded={data.itemsneeded}
 
                     />

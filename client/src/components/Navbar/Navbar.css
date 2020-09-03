@@ -8,6 +8,15 @@
 		src: url("./Roboto-Regular.ttf");
 }
 
+main > .container {
+  padding: 60px 15px 0;
+}
+
+
+code {
+  font-size: 80%;
+}
+
 
 
 h3 {
