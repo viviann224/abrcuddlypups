@@ -7,8 +7,8 @@ function Navbar() {
   return (
 
     <nav className="navbar navbar-expand-md navbar-light fixed-top bg-white mb-3">
-      <a class="navbar-brand" href="https://austinbulldogrescue.com/">
-    <img src={logo} width="30" height="30" class="d-inline-block align-top logo" alt=""/>
+      <a className="navbar-brand" href="https://austinbulldogrescue.com/">
+    <img src={logo} width="30" height="30" className="d-inline-block align-top logo" alt=""/>
     <strong>Austin Bulldog Rescue</strong>
   </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,10 @@ function Navbar() {
           </li>
         </ul>
 
-        <span class="navbar-text mr-1">
+        <span className="navbar-text mr-1">
       <a href="https://www.instagram.com/austin_bulldog_rescue/"><FaInstagram style={{ fill: '#006064' }}/></a>
     </span>
-    <span class="navbar-text mr-1">
+    <span className="navbar-text mr-1">
   <a href="https://www.facebook.com/AustinBulldogRescue/"><FaFacebook style={{ fill: '#006064' }}/></a>
 </span>
 
