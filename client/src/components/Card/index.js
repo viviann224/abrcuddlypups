@@ -11,7 +11,7 @@ function Card(props) {
              <h2>{props.name}</h2>
              <p id="card-desc">{props.desc}</p>
              <p id="card-hover"><FaMapMarkerAlt style={{ fill: '#006064' }}/> {props.loc} |
-            <FaDollarSign style={{ fill: '#006064' }}/> {props.donationsneeded} needed |
+            <FaDollarSign style={{ fill: '#006064' }}/> {props.donationsneeded} needed | 
             <FaGift style={{ fill: '#006064' }}/> {props.itemsneeded}</p>
              <a className="info" href={props.link}>Donate</a>
           </div>
