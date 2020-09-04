@@ -17,7 +17,9 @@ code {
   font-size: 80%;
 }
 
-
+strong{
+	letter-spacing: 1px;
+}
 
 h3 {
     font-family: "Roboto Slab", serif ;
@@ -27,6 +29,9 @@ h3 {
     color: #006064;
     margin: .25em 0 .56em;
      letter-spacing: 1px;
+}
+.logo{
+	margin:0 .5rem;
 }
 
 body{
@@ -39,4 +44,25 @@ h4{
 	font-size:1.65em;
 	font-weight:800;
 
+}
+a:link{
+
+}
+
+a {
+  position: relative;
+  display: inline-block;
+
+  color: #626d72;
+  overflow: hidden;
+	background: linear-gradient(to right, #006064, #17a2b8 50%, #626d72  50%);
+	background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+	transition: background-position 375ms ease;
+}
+a:hover {
+  background-position: 0 100%;
 }

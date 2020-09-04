@@ -8,6 +8,14 @@
 		src: url("./RobotoSlab-VariableFont_wght.ttf");
 }
 
+.navbar-light{
+  border-bottom: 1px solid #dbdbdb;
+}
+
+body{
+  background-color: #fafafa;
+}
+
 #card-container{
   margin-top:4rem;
 }

@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Switch>
 
-          <Route exact path={["/donate"]}>
+          <Route exact path={["/donate", "/"]}>
             <Donate />
           </Route>
     {/*
