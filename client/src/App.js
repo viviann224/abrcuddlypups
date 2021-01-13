@@ -10,17 +10,9 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-
           <Route exact path={["/donate", "/"]}>
             <Donate />
           </Route>
-    {/*
-          <Route exact path="/books/:id">
-            <Detail />
-          </Route>
-          <Route>
-            <NoMatch />
-          </Route>*/}
         </Switch>
         <Footer/>
       </div>

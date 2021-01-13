@@ -8,7 +8,7 @@ var request = require("request");
 // Matches with "/api/pups"
 router.get("/", function(req, res)
 {
-  request("https://cuddly.com/grant-a-poundwish?term=austin+bulldog+rescue&breed=&location=&breedName=&locationName=", function(error, response, html) {
+  request("https://cuddly.com/shelter/39529?fbclid=IwAR0tTeunJy3qISBM6L9ZG42erzI0ZBMEB_BTm28DzYLIoIqHH4E12AjU0tE", function(error, response, html) {
 
   // Load the HTML into cheerio and save it to a variable
   // '$' becomes a shorthand for cheerio's selector commands, much like jQuery's '$'
