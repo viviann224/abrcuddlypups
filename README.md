@@ -5,18 +5,16 @@ The program should run automatically.
 If the program is not running automatically, please make sure you have all the prerequisites listed below.
 
 **STATEMENT OF PURPOSE**:
-Austin Bulldog Rescue Resources is a React application where  users can quickly find resources to help the Austin Bulldog Rescue. Data in scrapped from the cuddly page to get the most up to date information about how much donations and supplies each rescue dog needs. The application uses React, React Router, and Axios as the frontend and express with Cheerio in the backend to scrape all the pup bios. 
+Austin Bulldog Rescue Resources is a React application where  users can quickly find resources to help the Austin Bulldog Rescue. Data in scrapped from the cuddly page to get the most up to date information about how much donations and supplies each rescue dog needs. The application uses React, React Router, and Axios as the frontend and express with Cheerio in the backend to scrape all the pup bios.
 
 The Austin Bulldog Rescue is a donation based rescue and does not have a shelter. All dogs are with their current fosters. Donations to the Austin Bulldog Rescue gives each homeless dog a second chance at life with food, medical, and training. Once the dogs are deemed healthy, they can get matched up with potential Adopters.
 
-
-Aller-Jeeves contains recipe cards with the recipes, a picture of the dish, and a bookmarking options (when the user logs in) on the front of the card. When the user clicks on the recipe the card flips over to the back to display a list of ingredients and a button linked to the recipe.
 
 **PREREQUISITES**:
 - Google Chrome Internet Browser
 - JavaScript enabled on Google Chrome
 - Access to Google Font packages
-- Access to Yummly  API
+- Access to Cuddly  API
 - Bootstrap
 
 
